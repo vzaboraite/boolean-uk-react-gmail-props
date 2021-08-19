@@ -8,10 +8,7 @@ function Header(props) {
   return (
     <header className="header">
       <LeftMenu />
-      <Search
-        searchInput={props.searchInput}
-        setSearchInput={props.setSearchInput}
-      />
+      <Search setSearchInput={props.setSearchInput} />
     </header>
   );
 }

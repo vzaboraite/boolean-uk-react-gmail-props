@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header searchInput={searchInput} setSearchInput={setSearchInput} />
+      <Header setSearchInput={setSearchInput} />
       <LeftMenu
         currentTab={currentTab}
         unreadEmails={unreadEmails}
