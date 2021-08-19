@@ -1,35 +1,18 @@
+import InboxList from "./components/InboxList";
 import "./styles.css";
 
 function LeftMenu(props) {
   console.log("Props inside LeftMenu: ", props);
   return (
     <nav className="left-menu">
-      <ul className="inbox-list">
-        <li
-          className={`item ${props.currentTab === "inbox" ? "active" : ""}`}
-          onClick={() => props.setCurrentTab("inbox")}
-        >
-          <span className="label">Inbox</span>
-          <span className="count">{props.unreadEmails.length}</span>
-        </li>
-        <li
-          className={`item ${props.currentTab === "starred" ? "active" : ""}`}
-          onClick={() => props.setCurrentTab("starred")}
-        >
-          <span className="label">Starred</span>
-          <span className="count">{props.starredEmails.length}</span>
-        </li>
-
-        <li className="item toggle">
-          <label htmlFor="hide-read">Hide read</label>
-          <input
-            id="hide-read"
-            type="checkbox"
-            checked={props.hideRead}
-            onChange={(e) => props.setHideRead(e.target.checked)}
-          />
-        </li>
-      </ul>
+      <InboxList
+        currentTab={props.currentTab}
+        unreadEmails={props.unreadEmails}
+        starredEmails={props.starredEmails}
+        hideRead={props.hideRead}
+        setCurrentTab={props.setCurrentTab}
+        setHideRead={props.setHideRead}
+      />
     </nav>
   );
 }
