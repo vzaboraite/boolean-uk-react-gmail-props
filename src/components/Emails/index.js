@@ -1,3 +1,5 @@
+import "./styles.css";
+
 import Email from "./components/Email";
 
 function Emails(props) {

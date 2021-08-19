@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function LeftMenu(props) {
   console.log("Props inside LeftMenu: ", props);
   return (

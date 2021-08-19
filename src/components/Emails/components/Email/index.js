@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function Email(props) {
   console.log("Props inside Email: ", props);
   return (

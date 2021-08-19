@@ -1,3 +1,5 @@
+import "./styles.css";
+
 import SearchBar from "./components/SearchBar";
 
 function Search() {

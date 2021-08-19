@@ -1,3 +1,5 @@
+import "./styles.css";
+
 import GmailLogo from "./components/GmailLogo";
 import MenuIcon from "./components/MenuIcon";
 

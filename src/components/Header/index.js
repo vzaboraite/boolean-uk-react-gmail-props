@@ -1,3 +1,5 @@
+import "./styles.css";
+
 import LeftMenu from "./components/LeftMenu";
 import Search from "./components/Search";
 
