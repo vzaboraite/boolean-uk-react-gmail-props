@@ -2,10 +2,14 @@ import "./styles.css";
 
 import SearchBar from "./components/SearchBar";
 
-function Search() {
+function Search(props) {
+  console.log("Props inside Search: ", props);
   return (
     <div className="search">
-      <SearchBar />
+      <SearchBar
+        searchInput={props.searchInput}
+        setSearchInput={props.setSearchInput}
+      />
     </div>
   );
 }
