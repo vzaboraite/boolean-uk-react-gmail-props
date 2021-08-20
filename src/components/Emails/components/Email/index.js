@@ -3,10 +3,7 @@ import "./styles.css";
 function Email(props) {
   console.log("Props inside Email: ", props);
   return (
-    <li
-      key={props.index}
-      className={`email ${props.email.read ? "read" : "unread"}`}
-    >
+    <li className={`email ${props.email.read ? "read" : "unread"}`}>
       <div className="select">
         <input
           className="select-checkbox"

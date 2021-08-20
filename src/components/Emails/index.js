@@ -9,8 +9,8 @@ function Emails(props) {
       <ul>
         {props.filteredEmails.map((email, index) => (
           <Email
+            key={index}
             email={email}
-            index={index}
             toggleRead={props.toggleRead}
             toggleStar={props.toggleStar}
           />
